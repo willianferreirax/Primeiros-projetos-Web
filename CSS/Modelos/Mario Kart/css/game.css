@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+    width: 400px;
+    height: 530px;
+    margin: 0 auto;
+    background: #000000;
+    cursor: url('../images/kart_mario_big.png') 30 30, auto;
+    background: url('../images/ground.gif');
+    text-align: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #000000;
+    width: 100%;
+    height: 150px;
+    z-index: 1000;
+}
+
+.wins{
+    position: absolute;
+    background-color: #000000;
+    z-index: 1000;
+    top: -530px;
+    height: 100%;
+    cursor: auto;
+}
+
+.track {
+    position: absolute;
+    left: 55px;
+    top: -50px;
+    width: 290px;
+    height: 602px;
+    background: url('../images/track.gif');
+    background-size: 100%;
+    transform: perspective(200px) rotateX(15deg) translateY(-90px);
+}
+
+.opponent {
+    height: 33px;
+    width: 30px;
+    margin-right: 5px;
+    margin-top: 15px;
+    position: absolute;
+    top: -50%;
+    left: 0;
+    background: url('../images/kart_bowser.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container .opponent:hover {
+    border-radius: 0;
+    margin: 0;
+    height: 530px;
+    width: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: url('../images/game_over.png');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: 131px 252px; 
+    overflow: visible;
+    cursor: not-allowed;
+    animation: animation1 0s 0s linear !important;
+    animation: animation2 0s 0s linear !important;
+    animation: animation3 0s 0s linear !important;
+    animation: animation4 0s 0s linear !important;
+    animation: animation5 0s 0s linear !important;
+    animation: animation6 0s 0s linear !important;
+    animation: animation7 0s 0s linear !important;
+    animation: animation8 0s 0s linear !important;
+    animation: animation9 0s 0s linear !important;
+    animation: animation10 0s 0s linear !important;
+    animation: animation99 0s 0s linear !important;
+}
+
+.opponent_kart_bowser {
+    background: url('../images/kart_bowser.png');
+}
+
+.opponent_kart_donkeykongjr {
+    background: url('../images/kart_donkeykongjr.png');
+}
+
+.opponent_kart_koopatroopa {
+    background: url('../images/kart_koopatroopa.png');
+}
+
+.opponent_kart_luigi {
+    background: url('../images/kart_luigi.png');
+}
+
+.opponent_kart_princess {
+    background: url('../images/kart_princess.png');
+}
+
+.opponent_kart_toad {
+    background: url('../images/kart_toad.png');
+}
+
+.opponent_kart_yoshi {
+    background: url('../images/kart_yoshi.png');
+}
+
+.opponent_obstacle {
+    background: url('../images/obstacle.png');
+}
+
+.opponent_kart_bowser,
+.opponent_kart_donkeykongjr,
+.opponent_kart_koopatroopa,
+.opponent_kart_luigi,
+.opponent_kart_princess,
+.opponent_kart_toad,
+.opponent_kart_yoshi {
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container:hover #opponent_01 {
+    animation: animation1 6s 0s linear;
+}
+
+.container:hover #opponent_02 {
+    animation: animation2 5s 2s linear;
+}
+
+.container:hover #opponent_03 {
+    animation: animation3 3s 3s linear;
+}
+
+.container:hover #opponent_04 {
+    animation: animation4 6s 4s linear;
+}
+
+.container:hover #opponent_05 {
+    animation: animation5 4s 5s linear;
+}
+
+.container:hover #opponent_06 {
+    animation: animation2 3s 6s linear;
+}
+
+.container:hover #opponent_07 {
+    animation: animation7 2s 8s linear;
+}
+
+.container:hover #opponent_08 {
+    animation: animation4 5s 8s linear;
+}
+
+.container:hover #opponent_09 {
+    animation: animation8 3s 9s linear;
+}
+
+.container:hover #opponent_10 {
+    animation: animation6 4s 10s linear;
+}
+
+.container:hover #opponent_11 {
+    animation: animation1 6s 10s linear;
+}
+
+.container:hover #opponent_12 {
+    animation: animation6 4s 11s linear;
+}
+
+.container:hover #opponent_13 {
+    animation: animation2 8s 12s linear;
+}
+
+.container:hover #opponent_14 {
+    animation: animation9 4s 13s linear;
+}
+
+.container:hover #opponent_15 {
+    animation: animation3 5s 13s linear;
+}
+
+.container:hover #opponent_16 {
+    animation: animation10 7s 14s linear;
+}
+
+.container:hover #opponent_17 {
+    animation: animation7 3s 15s linear;
+}
+
+.container:hover #opponent_18 {
+    animation: animation3 5s 16s linear;
+}
+
+.container:hover #opponent_19 {
+    animation: animation6 4s 16s linear;
+}
+
+.container:hover #opponent_20 {
+    animation: animation1 3s 17s linear;
+}
+
+.container:hover #opponent_21 {
+    animation: animation2 4s 17s linear;
+}
+
+.container:hover #opponent_22 {
+    animation: animation1 5s 18s linear;
+}
+
+.container:hover #opponent_23 {
+    animation: animation4 9s 19s linear;
+}
+
+.container:hover #opponent_24 {
+    animation: animation9 2s 20s linear;
+}
+
+.container:hover #opponent_25 {
+    animation: animation7 3s 20s linear;
+}
+
+.container:hover #opponent_26 {
+    animation: animation1 5s 20s linear;
+}
+
+.container:hover #opponent_27 {
+    animation: animation9 6s 21s linear;
+}
+
+.container:hover #opponent_28 {
+    animation: animation3 3s 22s linear;
+}
+
+.container:hover #opponent_29 {
+    animation: animation6 4s 23s linear;
+}
+
+.container:hover #opponent_30 {
+    animation: animation4 5s 24s linear;
+}
+
+.container:hover #opponent_31 {
+    animation: animation9 4s 24s linear;
+}
+
+.container:hover #opponent_32 {
+    animation: animation6 2s 25s linear;
+}
+
+.container:hover #opponent_33 {
+    animation: animation3 3s 26s linear;
+}
+
+.container:hover #opponent_34 {
+    animation: animation4 5s 26s linear;
+}
+
+.container:hover #opponent_35 {
+    animation: animation10 8s 27s linear;
+}
+
+.container:hover #opponent_36 {
+    animation: animation2 3s 27s linear;
+}
+
+.container:hover #opponent_37 {
+    animation: animation7 2s 28s linear;
+}
+
+.container:hover #opponent_38 {
+    animation: animation4 5s 28s linear;
+}
+
+.container:hover #opponent_39 {
+    animation: animation1 3s 29s linear;
+}
+
+.container:hover #opponent_40 {
+    animation: animation6 4s 30s linear;
+}
+
+.container:hover .wins {
+    animation: animation99 10s 35s linear;
+}
+
+@keyframes animation1 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 260px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 315px;
+        top: 515px;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 125px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 50px;
+        top: 515px;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 150px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 200px;
+        top: 515px;
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 260px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 200px;
+        top: 515px;
+    }
+}
+
+@keyframes animation5 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 150px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 150px;
+        top: 515px;
+    }
+}
+
+@keyframes animation6 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 120px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 250px;
+        top: 515px;
+    }
+}
+
+@keyframes animation7 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 260px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 0;
+        top: 515px;
+    }
+}
+
+@keyframes animation8 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 120px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 300px;
+        top: 515px;
+    }
+}
+
+@keyframes animation9 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 200px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 150px;
+        top: 515px;
+    }
+}
+
+@keyframes animation10 {
+    0% {
+        width: 20px;
+        height: 22px;
+        left: 250px;
+        top: -33px;
+    }
+
+    100% {
+        width: 60px;
+        height: 66px;
+        left: 120px;
+        top: 515px;
+    }
+}
+
+@keyframes animation99 {
+    0% {
+        top: -530px;
+    }
+
+    50% {
+        top: 0px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}

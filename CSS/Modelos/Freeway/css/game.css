@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000000;
+}
+
+.container {
+	position: relative;
+	width: 644px;
+    height: 444px;
+	margin: 0 auto;
+    background: url('../images/track.png');
+    cursor: url('../images/chicken.png') 12 8, auto;
+}
+
+.overlay_left {
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    top: 0;
+    left: -36px;
+    z-index: 20;
+    background-color: #000000;    
+}
+
+.overlay_right {
+    position: absolute;
+    width: 36px;
+    height: 100%;
+    top: 0;
+    right: -36px;
+    z-index: 20;
+    background-color: #000000;
+}
+
+.car {
+	position: absolute;
+    height: 22px;
+    width: 36px;
+    left: -36px;
+    background: url('../images/car_red.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.truck {
+    height: 22px;
+    width: 71px;
+    position: absolute;
+    background: url('../images/truck_blue.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.car_blue {
+    background: url('../images/car_blue.png');
+}
+
+.car_brown {
+    background: url('../images/car_brown.png');
+}
+
+.car_green {
+    background: url('../images/car_green.png');
+}
+
+.car_orange {
+    background: url('../images/car_orange.png');
+}
+
+.car_pink {
+    background: url('../images/car_pink.png');
+}
+
+.car_purple {
+    background: url('../images/car_purple.png');
+}
+
+.car_red {
+    background: url('../images/car_red.png');
+}
+
+.truck_blue {
+    background: url('../images/truck_blue.png');
+}
+
+.truck_brown {
+    background: url('../images/truck_brown.png');
+}
+
+.truck_orange {
+    background: url('../images/truck_orange.png');
+}
+
+.container .car:hover, .container .truck:hover {
+	position: absolute;
+	width: 644px;
+    height: 444px;
+    top: 0;
+    left: 0;
+    z-index: 30;
+    background: url('../images/game_over.png');
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: 258px 211px; 
+    overflow: visible;
+    cursor: not-allowed;
+    animation: car_left 0s 0s linear !important;
+}
+
+
+.container:hover .car_01 {
+	bottom: 50px;
+    animation: car_left 6s -2s linear infinite;
+}
+
+.container:hover .car_02 {
+	bottom: 90px;
+    animation: car_left 5s -2s linear infinite;
+}
+
+.container:hover .car_03 {
+	bottom: 125px;
+    animation: car_left 3s -1s linear infinite;
+}
+
+.container:hover .car_04 {
+	bottom: 160px;
+    animation: car_left 6s -4s linear infinite;
+}
+
+.container:hover .car_05 {
+	bottom: 195px;
+    animation: car_left 4s -1s linear infinite;
+}
+
+.container:hover .car_06 {
+	bottom: 235px;
+    animation: car_left 5s 0s linear infinite;
+}
+
+.container:hover .car_07 {
+	bottom: 265px;
+    animation: car_left 2s 0s linear infinite;
+}
+
+.container:hover .car_08 {
+	bottom: 300px;
+    animation: car_left 5s -2s linear infinite;
+}
+
+.container:hover .car_09 {
+	bottom: 335px;
+    animation: car_left 2s 1s linear infinite;
+}
+
+.container:hover .car_10 {
+	bottom: 375px;
+    animation: car_left 3s 0s linear infinite;
+}
+
+
+
+@keyframes car_left {
+    0% {
+        left: 644px;
+    }
+
+    100% {
+        left: -36px;
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        left: 644px;
+    }
+
+    100% {
+        left: -36px;
+    }
+}
+
+@keyframes animation3 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation4 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation5 {
+    0% {
+       	
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation6 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation7 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation8 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}
+
+@keyframes animation9 {
+    0% {
+        
+    }
+
+    100% {
+        
+    }
+}

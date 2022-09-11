@@ -1,0 +1,36 @@
+form{
+	width: 550px;
+	margin: auto;
+	font-family: sans-serif;
+	font-weight:normal;
+	font-size:13pt;
+	
+}
+input,textarea,select{
+	font-family:"Courier New", Courier, monospace;
+	font-weight:normal;
+	font-size:13pt;
+	font
+}
+
+input:hover,textarea:hover,select:hover{
+	background-color:#ddd;
+}
+
+legend{
+	color:white;
+	font-family:sans-serif;
+	font-weight:bold;
+	font-size:13 pt;
+}
+
+fieldset{
+	border-color:black;
+	margin:20px;
+}
+
+body{
+	background-color:gray;
+	font-family: "Times New Roman", Times, serif;
+	color:white;
+}

@@ -1,0 +1,95 @@
+<DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<title>Exemplo - Aula7</title>
+		<link href="css/form.css " rel="stylesheet">
+	</head>
+	<body>
+		<form method="get" action="exemploscondic1.php">
+			<p>
+				Exemplo 01 - Ler ano de nascimento de uma pessoa e mostrar se ela pode ou não votar e dirigir
+			</p>
+			<fieldset>
+				<legend>Verificar SE pode dirigir e votar</legend>
+				<p> 
+					<label for="cAno"> Ano Nascmento: </label>
+					<input type="number" name="tAno" id="cAno" size="15" maxlength="15" placeholder="4 digitos" />
+				</p>
+				<input type="submit" name="tEnviar" value="Verificar" />
+			</fieldset>
+		</form>
+		<hr>
+		
+		<form method="get" action="exemploscondic2.php">
+			<p>
+				Exemplo 02 - Ler ano de nascimento de uma pessoa e mostrar o tipo de voto
+			</p>
+			<fieldset>
+				<legend>Verificar SE pode dirigir e votar</legend>
+				<p> 
+					<label for="cAno2"> Ano Nascmento: </label>
+					<input type="number" name="tAno2" id="cAno2" size="15" maxlength="15" placeholder="4 digitos" />
+				</p>
+				<input type="submit" name="tEnviar2" value="Verificar" />
+			</fieldset>
+		</form>
+		<hr>
+		
+		<form method="get" action="exemploscondic2a.php">
+			<p>
+				Exemplo 02A - Ler ano de nascimento de uma pessoa e mostrar o tipo de voto
+			</p>
+			<fieldset>
+				<legend>Tipo de Voto:</legend>
+				<p> 
+					<label for="cAno3"> Ano Nascmento: </label>
+					<input type="number" name="tAno3" id="cAno3" size="15" maxlength="15" placeholder="4 digitos" />
+				</p>
+				<input type="submit" name="tEnviar3" value="Verificar" />
+			</fieldset>
+		</form>
+		<hr>
+		
+		<form method="get" action="exemploscondic3.php">
+			<p>
+				Exemplo 03 - Ler um número e qual operação realizar: dobro, cubo ou raiz quadrada.
+			</p>
+			<fieldset>
+				<legend>Multipla escolha</legend>
+				<p> 
+					<label for="cNum"> Número: </label>
+					<input type="number" name="tNum" id="cNum" size="15" maxlength="15" placeholder="Digite um número" />
+					<fieldset>
+						<legend>Operação</legend>
+							<input type="radio" name="top" id="cDobro" value="1" checked />
+							<label for="cDobro">Dobro</label>
+							<input type="radio" name="top" id="cCubo" value="2" />
+							<label for="cCubo">Cubo</label>
+							<input type="radio" name="top" id="cRaiz" value="3" />
+							<label for="cRaiz">Raiz Quadrada</label>
+					</fieldset>
+				</p>
+				<input type="submit" name="tEnviar4" value="Verificar" />
+			</fieldset>
+		</form>
+		<hr>
+		
+		<form method="get" action="exemploscondic3a.php">
+			<p>
+				Exemplo 03A - Ler o dia da semana (2~7) e mostra se precisa ou não ir para escola
+			</p>
+			<fieldset>
+				<legend>Multipla escolha:</legend>
+				<p> 
+					<label for="cDia"> Dia da Semana: </label>
+					<input type="number" name="tDia" id="cDia" size="15" min="2" max="8" required />
+				</p>
+				<input type="submit" name="tEnviar5" value="Verificar" />
+			</fieldset>
+		</form>
+		<hr>
+		
+		
+	</body>
+</html>

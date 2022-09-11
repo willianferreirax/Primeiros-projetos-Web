@@ -1,0 +1,426 @@
+<DOCTYPE html>
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<title>Lista 1 - Decisão</title>
+		<link href="css/form.css " rel="stylesheet">
+	</head>
+	<body>
+		<form method="get" action="condic1.php">
+			<p>
+				1 - Faça um programa que receba as três notas, calcule e mostre a média ponderada e o conceito.
+			</p>
+			<fieldset>
+				<p> 
+					<label for="cTrabalho"> Nota do trabalho: </label>
+					<input type="text" name="tTrabalho" id="cTrabalho" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+
+				<p> 
+					<label for="cSem"> Nota da avaliação semestral: </label>
+					<input type="text" name="tSem" id="cSem" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+
+				<p> 
+					<label for="cExam"> Nota do exame final: </label>
+					<input type="text" name="tExam" id="cExam" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+				<input type="submit" name="tEnviar" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic2.php">
+			<p>
+				2 - Faça um programa que receba três notas de um aluno, calcule e mostre a média aritimética e a mensagem constante na tabela a seguir. Aos alunos que ficaram para exame, calcule e mostre a nota que deverão tirar para serem aprovados, considerando que a média exigida é 6,0.
+			</p>
+			<fieldset>
+				<p> 
+					<label for="cNota1"> Nota 1: </label>
+					<input type="text" name="tNota1" id="cNota1" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+
+				<p> 
+					<label for="cNota2"> Nota 2: </label>
+					<input type="text" name="tNota2" id="cNota2" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+			
+				<p> 
+					<label for="cNota3"> Nota 3: </label>
+					<input type="text" name="tNota3" id="cNota3" size="15" maxlength="15" placeholder="Digite a nota" />
+				</p>
+				<input type="submit" name="tEnviar2" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic3.php">
+			<p>
+				3 - Faça um programa que receba dois números e mostre o maior.
+			</p>
+			<fieldset>
+				<p> 
+					<label for="cNum1"> Número 1: </label>
+					<input type="text" name="tNum1" id="cNum1" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cNum2"> Número 2: </label>
+					<input type="text" name="tNum2" id="cNum2" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+				<input type="submit" name="tEnviar3" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic4.php">
+			<p>
+				4 - Faça um programa que receba três números e mostre-os em ordem crescente. Suponha que o usuário digitará três números diferentes.
+			</p>
+			<fieldset>
+				<p> 
+					<label for="cNu1"> Número 1: </label>
+					<input type="text" name="tNu1" id="cNu1" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cNu2"> Número 2: </label>
+					<input type="text" name="tNu2" id="cNu2" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cNu3"> Número 3: </label>
+					<input type="text" name="tNu3" id="cNu3" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+				<input type="submit" name="tEnviar4" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic5.php">
+			<p>
+				5 - Faça um programa que receba três números obrigatoriamente em ordem crescente e um quarto número que não siga essa regra. Mostre, em seguida, os quatro números em ordem crescente. Suponha que o usúario digitará quatro números diferentes.
+			</p>
+			<fieldset>
+				
+				<p> 
+					<label for="cNu4"> Número 1: </label>
+					<input type="text" name="tNu4" id="cNu4" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cNu5"> Número 2: </label>
+					<input type="text" name="tNu5" id="cNu5" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cNu6"> Número 3: </label>
+					<input type="text" name="tNu6" id="cNu6" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+
+				<p>
+					<label for="cNuErrado"> Número fora de ordem: </label>
+					<input type="text" name="tNuErrado" id="cNuErrado" size="15" maxlength="15" placeholder="Digite um Número" />
+
+				</p>
+				<input type="submit" name="tEnviar5" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic6.php">
+			<p>
+				6 - Faça um programa que receba um número inteiro e verifique se é par ou impar.
+			</p>
+			<fieldset>
+				<legend>Número inteiro</legend>
+				<p> 
+					<label for="cInt"> Número Inteiro: </label>
+					<input type="text" name="tInt" id="cInt" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+				<input type="submit" name="tEnviar6" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic7.php">
+			<p>
+				7 - Faça um programa que receba quatro valores:I, A, B, C. Desses valores, I é inteiro e positivo A, B e C são reais.
+				I só pode ter o valor de 1, 2 ou 3. A B e C têm que ser diferentes.
+			</p>
+			<fieldset>
+				<p> 
+					<label for="cInt2"> Número Inteiro: </label>
+					<input type="text" name="tInt2" id="cInt2" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+
+				<p> 
+					<label for="cA"> Número A: </label>
+					<input type="text" name="tA" id="cA" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+			
+				<p> 
+					<label for="cB"> Número B: </label>
+					<input type="text" name="tB" id="cB" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+
+				<p> 
+					<label for="cC"> Número C: </label>
+					<input type="text" name="tC" id="cC" size="15" maxlength="15" placeholder="Digite um Número" />
+				</p>
+				<input type="submit" name="tEnviar7" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic8.php">
+			<p>
+				8 - Faça um programa que mostre o menu de opções a seguir, receba a do usuário e os dados necessários para executar cada operação.
+			</p>
+		<fieldset>
+			<p>
+				Menu de opções:
+				<p>1. Somar dois números.</p>
+				<p>2. Raiz quadrada de um número.</p>
+				<p>Selecione a opções desejada.</p>
+			</p>
+			<fieldset>
+				
+				<p> 
+					<input type="radio" name="tOp" id="cOp" value="1"/>
+					<label> Soma: </label>
+					<input type="text" name="tNu7" id="cNu7" size="15" maxlength="15" placeholder="Digite um número">
+					<input type="text" name="tNuesqueci" id="cNuesqueci" size="15" maxlength="15" placeholder="Digite um número">
+				</p>
+
+				<p>
+					<input type="radio" name="tOp" id="cOp" value="2"/>
+					<label> Raiz quadrada:</label>
+					<input type="text" name="tNu8" id="cNu8" size="15" maxlength="15" placeholder="Digite um número">
+				</p>
+				<input type="submit" name="tEnviar8" value="Calcular" />
+			</fieldset>
+		</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic9.php">
+			<p>
+				9 - Faça um programa que mostre a data e a hora do sistema nos seguintes formatos: DD/MM/AAAA - mês por extenso e hora:minuto.
+			</p>
+			<fieldset>
+				<input type="submit" name="tEnviar9" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+			
+		<form method="get" action="condic10.php">
+			<p>
+				10 - Faça um programa que determine a data cronologicamente maior entre duas das datas fornecidas pelo usuário. Cada data deve ser composta por três valores inteiros. Dia, mês e ano.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Primeira data:</label> 
+						<input type="text" name="tDia1" id="cDia1" size="15" maxlength="15" placeholder="Digite o dia">
+						<input type="text" name="tMes1" id="cMes1" size="15" maxlength="15" placeholder="Digite o mês">
+						<input type="text" name="tAno1" id="cAno1" size="15" maxlength="15" placeholder="Digite o ano">
+					</p>
+					<p>
+						<label>Segunda data:</label> 
+						<input type="text" name="tDia2" id="cDia2" size="15" maxlength="15" placeholder="Digite o dia">
+						<input type="text" name="tMes2" id="cMes2" size="15" maxlength="15" placeholder="Digite o mês">
+						<input type="text" name="tAno2" id="cAno2" size="15" maxlength="15" placeholder="Digite o ano">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar10" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic11.php">
+			<p>
+				11 - Faça um programa que receba a hora de inicio de um jogo e a hora final. Calcule e mostre a duração do jogo
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Hora de inicio:</label> 
+						<input type="text" name="tHora1" id="cHora1" size="15" maxlength="15" placeholder="Digite o Hora">
+						<input type="text" name="tMin1" id="cMin1" size="15" maxlength="15" placeholder="Digite os minutos">
+					</p>
+					<p>
+						<label>Hora do termino:</label> 
+						<input type="text" name="tHora2" id="cHora2" size="15" maxlength="15" placeholder="Digite o Hora">
+						<input type="text" name="tMin2" id="cMin2" size="15" maxlength="15" placeholder="Digite os minutos">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar11" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic12.php">
+			<p>
+				12 - Faça um programa que receba o código correspondente ao cargo de um funcionário e seus salário atual e mostre o cargo, o valor do aumento e seu novo salario.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Código de funcionario:</label> 
+						<input type="text" name="tCargo" id="cCargo" size="20" maxlength="15" placeholder="Digite o código do cargo">
+					</p>
+					<p>
+						<label>Salário atual:</label> 
+						<input type="text" name="tSalarioa" id="cSalarioa" size="15" maxlength="15" placeholder="Digite o Salário">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar12" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic13.php">
+			<p>
+				13 - Faça um programa que apresente o menu a seguir, permita o usuário escolher a opção desejada, receba os dados  e mostre o resultado
+			</p>
+		<fieldset>
+			<p>
+				Menu de opções:
+				<p>1. Imposto.</p>
+				<p>2. Novo salário.</p>
+				<p>3. Classificação.</p>
+				<p>Selecione a opções desejada.</p>
+			</p>
+			<fieldset>
+				
+				<p> 
+					<input type="radio" name="tOp2" id="cOp2" value="1"/>
+					<label> Imposto: </label>
+
+					<input type="radio" name="tOp2" id="cOp2" value="2"/>
+					<label>	Novo salário</label>
+					
+					<input type="radio" name="tOp2" id="cOp2" value="3"/>
+					<label> Classificação</label>
+					
+					<input type="text" name="tNu8" id="cNu8" size="15" maxlength="15" placeholder="Digite o salário">
+				</p>
+				<input type="submit" name="tEnviar13" value="Calcular" />
+			</fieldset>
+		</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic14.php">
+			<p>
+				14 - Faça um programa que receba o salário de um funcionário, calcule e mostre o novo salário, acrescido de bonificação e de auxilio escola.
+			</p>
+			<fieldset>
+				<p>
+						<label>Salário:</label> 
+						<input type="text" name="tSalario2" id="cSalario2" size="20" maxlength="15" placeholder="Digite o salário">
+				</p>
+				<input type="submit" name="tEnviar14" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic15.php">
+			<p>
+				15 - Faça um programa que receba o valor do salário mínimo, o número de horas trabalhadas, o número de dependentes, e a quantidade de horas extras trabalhadas. Calcule e mostre o salário a receber.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Salário minimo:</label> 
+						<input type="text" name="tSalario3" id="cSalario3" size="20" maxlength="15" placeholder="Digite o salário">
+					</p>
+					<p>
+						<label>Horas trabalhadas:</label>
+						<input type="text" name="tHrtrab" id="cHrtrab" size="25" maxlength="15" placeholder="Digite as horas trabalhadas">
+					</p>
+					<p>
+						<label>Número de dependentes</label>
+						<input type="text" name="tDep" id="cDep" size="30" maxlength="15" placeholder="Digite a quantidade de dependetes">
+					</p>
+					<p>
+						<label>Horas extras:</label>
+						<input type="text" name="tHrex" id="cHrex" size="30" maxlength="15" placeholder="Digite a quantidade de hora extra">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar15" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic16.php">
+			<p>
+				16 - Um supermercado deseja reajustar os preços de seus produtos de acordo com a venda média mensal e o preço atual, podendo aumentar ou diminuir o preço.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Venda média mensal:</label> 
+						<input type="text" name="tVenda" id="cVenda" size="25" maxlength="15" placeholder="Digite a quantidade de vendas mensais">
+					</p>
+					<p>
+						<label>Preço atual:</label>
+						<input type="text" name="tPreco" id="cPreco" size="20" maxlength="15" placeholder="Digite o preço atual">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar16" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic17.php">
+			<p>
+				17 - Faça um programa para resolver equações do 2°grau.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>A:</label> 
+						<input type="text" name="tA2" id="cA2" size="15" maxlength="15" placeholder="Digite o valor de A">
+					</p>
+					<p>
+						<label>B:</label>
+						<input type="text" name="tB2" id="cB2" size="15" maxlength="15" placeholder="Digite o valor de B">
+					</p>
+					<p>
+						<label>C:</label>
+						<input type="text" name="tC2" id="cC2" size="15" maxlength="15" placeholder="Digite o valor de C">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar17" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+		<form method="get" action="condic18.php">
+			<p>
+				18 - Faça um programa que receba o comprimento de 3 lados de um triângulo, verifique se compõem um triângulo valido e se é isósceles, equilatero ou escaleno.
+			</p>
+			<fieldset>
+				<p>
+					<p>
+						<label>Lado A:</label> 
+						<input type="text" name="tA3" id="cA3" size="25" maxlength="15" placeholder="Digite o comprimento do lado A">
+					</p>
+					<p>
+						<label>Lado B:</label>
+						<input type="text" name="tB3" id="cB3" size="25" maxlength="15" placeholder="Digite o comprimento do lado B">
+					</p>
+					<p>
+						<label>Lado C:</label>
+						<input type="text" name="tC3" id="cC3" size="25" maxlength="15" placeholder="Digite o comprimento do lado C">
+					</p>
+				</p>
+				<input type="submit" name="tEnviar18" value="Calcular" />
+			</fieldset>
+		</form>
+		<hr>
+
+	</body>
+</html>

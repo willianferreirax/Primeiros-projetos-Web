@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Nome_nasc_sexo_idade</title>
+	</head>
+
+	<body>
+		<form method="get" action="dados3.php">
+			<fieldset>
+				<legend>Idade Atual</legend>
+				<p> 
+					<label for="cNome">Nome:</label>
+					<input type="text" name="tNome" id="cNome" size="35" maxlength="35" placeholder="Digite o Nome"/>
+					<p>
+						<label for="cAno">Ano:</label>
+						<input type="number" name="tAno" id="cAno" size="10" maxlength="10" placeholder="Digite ano"/>
+					</p>
+						<fieldset><legend>Sexo</legend>
+							<input type="radio" name="tSexo" id="masc" value="masculino" checked/>
+							<label for="masc">Masculino</label><br>
+							<input type="radio" name="tSexo" id="fem" value="feminino">
+							<label for="fem">Feminino</label>
+						</fieldset><br>
+						<input type="submit" name="tEnviar" value="Enviar" value="Calcular" />
+				</p>
+			</fieldset>
+		</form>	
+	</body>
+</html>

@@ -1,0 +1,56 @@
+@charset="UTF-8";
+form{ 
+width: 500px;
+margin: auto;
+font-family: sans-serif;
+font-weight:normal;
+font-size: 16 pt;
+background-color: black;
+position: center;
+}
+
+p
+{
+color:white;
+position: center;	
+font-size: 20 pt;	
+}
+
+
+input, textarea, select, label{
+font-family: sans-serif;
+font-weight:normal;
+font-size: 13 pt;
+position: center;
+}
+
+
+legend {
+Font-family: sans-serif;
+font-weight: bold;
+font-size: 20 pt;
+}
+
+
+fieldset {
+border-color: red;
+margin: 20px;
+color: white;
+background-color: black;
+position: center;
+
+}
+fieldset#sexo {
+width: 150px;
+}
+
+body
+{
+background-image: url(an.jpg);
+}
+
+h3
+{
+color: white;
+font-family: sans-serif;
+}

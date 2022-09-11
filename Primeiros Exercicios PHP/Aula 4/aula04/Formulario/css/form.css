@@ -1,0 +1,35 @@
+form{
+	width: 550px;
+	margin: auto;
+	font-family: sans-serif;
+	font-weight:normal;
+	font-size:13 pt;
+	
+}
+input,textarea,select{
+	font-family:sans-serif;
+	font-weight:normal;
+	font-size:13pt;
+	
+}
+input:hover,textarea:hover,select:hover{
+	background-color:#ddd;
+}
+legend{
+	color:white;
+	Font-family:sans-serif;
+	font-weight:bold;
+	font-size:13 pt;
+}
+fieldset{
+	border-color:black;
+	margin:20px;
+}
+fieldset#sexo{
+	width:150px;
+	
+}
+body{
+	background-color:gray;
+	color:white;
+}

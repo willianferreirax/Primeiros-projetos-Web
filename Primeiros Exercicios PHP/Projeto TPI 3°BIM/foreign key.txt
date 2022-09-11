@@ -1,0 +1,2 @@
+alter table disciplina add FOREIGN KEY disciplina(matricula_do_professor) REFERENCES professor(matricula_do_professor)
+alter table <tabela> add foreign key <tabela>(campo) references <tabela>(campo);

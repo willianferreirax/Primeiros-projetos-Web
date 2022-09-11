@@ -1,0 +1,148 @@
+.body{
+
+	background-color: #F0FFFF;
+	font-size: 20px;
+	font-family: Trebuchet MS ;
+
+}
+
+/*login mantem o bloco no meio da tela*/
+.login{
+
+	position: absolute;
+	left:50%;
+	top:50%;
+	margin-left:-250px;
+	margin-top:-150px;
+	background-color: #FFFAFA;
+	display: block;
+	padding-top:50px;
+	height: 250px;
+	width:500px;
+	box-shadow: 5px 10px 18px #888888
+		
+}
+
+.input{
+
+	width:200px;
+	height:20px;
+
+}
+
+.logar{
+
+	background-color: #9C9C9C;
+	width: 90px;
+	height: 40px;
+	border-bottom-style: outset;
+	border-color: #00C5CD;
+	border-width: 3px;
+	font-size: 15px;
+	font-family: Trebuchet MS ;
+
+}
+
+.menu {
+    list-style-type: none;
+    margin-bottom: 40px;
+    padding: 0;
+    width: 400px;
+    background-color: #f1f1f1;
+}
+
+.menu2 {
+    list-style-type: none;
+    margin-bottom: 40px;
+    margin-top: 50px; 
+    margin-left: 20px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    float: left;
+}
+
+.tela2{
+	background-color: #f1f1f1;
+	margin-left: 230px;
+	margin-top: 50px;
+	margin-right:30px;
+	margin-bottom: 50px;
+	border-style: outset;
+	border-width: 2px;
+	border-color: gray;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color:#E0EEEE;
+    color: black;
+}
+/*Logo do sistema*/
+.topo{
+
+	width: 1080px;
+	height: 300px;
+	box-shadow: 5px 10px 18px #888888;
+	background-color: #E0EEEE;
+
+}
+
+.tela{
+	margin-top: 20px;
+	width: 1080px;
+	background-color: white;
+	border-style: outset;
+	border-width: 3px;
+	border-color: gray;
+
+}
+
+/* Exibir lista de pessoas */
+
+td,tr{
+	font-size: 15px;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: left;
+    padding: 8px;
+}
+th{
+	padding: 15px;
+    text-align: left;
+    background-color: #E0EEEE;
+}
+
+.tr:hover{
+	background-color: #F0FFFF;
+}
+
+.del:hover{
+	background-color: red;
+	color:white;
+
+}
+.alt:hover{
+	background-color: yellow;
+	color: white;
+}
+
+
+table{
+	border: 1px solid black;
+	border-collapse: collapse;
+    width: 100%;
+}
+
+td a{
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}

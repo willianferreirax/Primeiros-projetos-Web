@@ -1,0 +1,65 @@
+﻿<html>
+	<head>
+		<title>exercicio4</title>
+	</head>
+	
+<script language="Javascript">
+
+function media(){
+var nome=(document.exerc_4_p3.nome.value);
+var nota1=eval(document.exerc_4_p3.num1.value);
+var nota2=eval(document.exerc_4_p3.num2.value);
+var nota3=eval(document.exerc_4_p3.num3.value);
+var nota4=eval(document.exerc_4_p3.num4.value);
+var media;
+media=(nota1+nota2+nota3+nota4)/4
+
+if(media<3){
+document.write("O aluno "+nome+" foi RETIDO, pois sua média foi: "+media);}
+
+if(media>=6){
+document.write("O aluno "+nome+" foi APROVADO, pois sua média foi: "+media);}
+
+if(media>=3 && media<6){
+document.write("O aluno "+nome+" ficou de EXAME, pois sua média foi: "+media);}
+}
+
+
+</script>
+
+<body>
+
+<h3><center>
+Digite o nome e notas do aluno e calcule a média
+</h3>
+
+<form name="exerc_4_p3">
+
+Digite o nome do aluno:<input type="text" name="nome">
+<br>
+<br>
+Digite a primeira nota:<input type="text" name="num1">
+<br>
+<br>
+Digite o segunda nota:<input type="text" name="num2">
+<br>
+<br>
+Digite o terceira nota:<input type="text" name="num3">
+<br>
+<br>
+Digite o quarta nota:<input type="text" name="num4">
+<br>
+<br>
+
+
+<input type="button" name="calcular" onclick="media()" value="calcular">
+
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</center>
+
+</body>
+
+</html>

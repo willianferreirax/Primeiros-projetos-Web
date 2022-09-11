@@ -1,0 +1,16 @@
+Exercício 01:
+
+Condições que o script deve atender:
+
+- Apresentar o resultado da soma de 3 números informados pelo usuário.
+
+Observação: 
+
+- Colocar o sinal de + na frente do window prompt como o exemplo a seguir
+
+ var num1=+window.prompt("Digite seu Numero", "");
+ 
+ Caso contrário, não serão somados os valore. Se o sinal de + for omitido
+ os número serão concatenados.
+
+

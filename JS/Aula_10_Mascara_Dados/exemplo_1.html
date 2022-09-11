@@ -1,0 +1,108 @@
+<html>
+  <head>
+    <title>Mascara de Campos</title>
+	
+	<script language=javascript>
+	
+    function blokletras(objEvent)
+    {
+      var iKeyCode;
+      iKeyCode = objEvent.keyCode;
+      if(iKeyCode>=48 && iKeyCode<=57) return true;
+      return false;
+    }
+	
+	function verifica()
+	{
+	  msg = "Tem certeza que deseja continuar?";
+	  
+	  return confirm(msg);
+	}
+	
+	function mascara(formato , keypress , objeto)
+	{
+	  campo = eval(objeto);
+	  
+	  // CEP:
+	  
+	  if (formato == 'cep')
+	  {
+	    separador  = '-';
+		conjunto1 = 5;
+		if (campo.value.length == conjunto1)
+		{
+		  campo.value = campo.value + separador;
+		}
+	  }
+	  
+	  // TELEFONE:
+	  if (formato=='telefone')
+	  {
+		conjunto1= 0;
+		conjunto2= 3;
+		conjuntox= 4;
+		conjunto3= 9;
+		separador1= '(';
+		separador2= ')';
+		separador3= '-';
+		separador4= ' ';
+		if(campo.value.length == conjunto1)
+		{
+			campo.value= campo.value+separador1;
+		}
+		if(campo.value.length == conjunto2 )
+		{
+			campo.value=campo.value+separador2;
+		}
+		if(campo.value.length == conjuntox)
+		{
+			campo.value=campo.value+separador4;
+		
+		}
+		if(campo.value.length == conjunto3)
+		{
+			campo.value = campo.value + separador3;
+		
+		}
+	  
+	  }
+	  
+	  // DATA DE NASCIMENTO:
+	  if(formato == 'dat_nasc' ){
+	  conjunto1=2;
+	  conjunto2=5;
+	  separador1='/';
+	  
+	  
+		if(campo.value.length == conjunto1){
+		campo.value= campo.value+separador1;	
+		
+		}
+		if(campo.value.length == conjunto2){
+			
+			campo.value= campo.value+separador1;
+		
+		}
+	  }
+	}
+	</script>
+  </head>
+ 
+  <body>
+    <form name="cadastro" action="form.php" method="post">
+	  CEP:<br>
+	  <input type="text" maxlength="9" size="10" name="cep" title="99999-999" onkeypress="mascara('cep' , window.event.keyCode , 'document.cadastro.cep'); return blokletras(event);">
+	  <br>Telefone:
+	  <br>
+	  <input type="text" maxlength="14" size="10" name="telefone" title="(99) 9999-9999" onkeypress="mascara('telefone' , window.event.keyCode , 'document.cadastro.telefone'); return blokletras(event);">
+	  <br>Data de nascimento:
+	  <br>
+	  <input type="text" maxlength="10" size="10" name="dat_nasc" title="99/99/9999" onkeypress="mascara('dat_nasc' , window.event.keyCode , 'document.cadastro.dat_nasc'); return blokletras(event);">
+	  <br>
+	  <input type="submit" title="enviar">
+	
+	
+	
+	</form>
+  </body>
+</html>

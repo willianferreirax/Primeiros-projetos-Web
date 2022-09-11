@@ -1,0 +1,42 @@
+﻿<html>
+	<head>
+		<title>exercicio2</title>
+	</head>
+	
+<script language="Javascript">
+
+function test(){
+var num=eval(document.exerc_2.num1.value);
+
+if (num<15){
+alert('O número digitado é menor que 15');}
+
+if (num>15 && num<100){
+alert('O número digitado está entre 15 e 100')
+}
+
+if (num>100){
+alert('O número digitado é maior que 100');}
+}
+
+</script>
+
+<body>
+
+<h3><center>
+Descubra se o número é menor que 15, maior que 100 ou se está entre 15 e 100
+</h3></center>
+
+<form name="exerc_2">
+
+Digite o número:<input type="text" name="num1">
+<br>
+<br>
+<input type="button" name="ver" onclick="test()" value="Verifique">
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</body>
+
+</html>

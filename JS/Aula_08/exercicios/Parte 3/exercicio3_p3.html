@@ -1,0 +1,49 @@
+﻿<html>
+	<head>
+		<title>exercicio3</title>
+	</head>
+	
+<script language="Javascript">
+
+function salario(){
+var bruto=eval(document.exerc_3_p3.num2.value);
+var liquido;
+var nome=(document.exerc_3_p3.name.value);
+liquido=(bruto+(bruto*(10/100))-bruto*(20/100))
+
+
+document.write("<center>Antes::O funcionário Sr(a) "+nome+" recebe o salário bruto R$ "+bruto+",00<br></center>");
+document.write("<center>Depois::O funcionário Sr(a) "+nome+" recebe o salário líquido R$ "+liquido+",00</center>");
+}
+
+
+</script>
+
+<body>
+
+<h3>
+<center>
+Cálculo do Salário Líquido
+</h3>
+
+<form name="exerc_3_p3">
+
+Digite o Nome do Funcionário:<input type="text" name="name">
+<br>
+Digite o salário bruto::R$<input type="text" name="num2">,00
+<br>
+
+<hr>
+
+
+<input type="button" name="calcular" onclick="salario()" value="Calcular Salário Líquido">
+
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</center>
+
+</body>
+
+</html>

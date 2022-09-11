@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Mascara de Campos</title>
+	
+	<script language=javascript>
+	
+    function blokletras(objEvent)
+    {
+      var iKeyCode;
+      iKeyCode = objEvent.keyCode;
+      if(iKeyCode>=48 && iKeyCode<=57) return true;
+      return false;
+    }
+	
+	function verifica()
+	{
+	  msg = "Tem certeza que deseja continuar?";
+	  
+	  return confirm(msg);
+	}
+	
+	function mascara(formato , keypress , objeto)
+	{
+	  campo = eval(objeto);
+	  
+	  // CEP:
+	  
+	  if (formato == 'cep')
+	  {
+	    separador  = '-';
+		conjunto1 = 5;
+		if (campo.value.length == conjunto1)
+		{
+		  campo.value = campo.value + separador;
+		}
+	  }
+	  
+	  // CPF:
+	  
+	  // DATA DE NASCIMENTO:
+	  
+	  
+	}
+	</script>
+  </head>
+  
+  <body>
+    <form name="cadastro" action="form.php" method="post">
+	  CEP:<br>
+	  <input type="text" maxlength="9" size="10" name="cep" title="99999-999" onkeypress="mascara('cep' , window.event.keyCode , 'document.cadastro.cep'); return blokletras(event);">
+	</form>
+  </body>
+</html>

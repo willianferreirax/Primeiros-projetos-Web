@@ -1,0 +1,45 @@
+﻿<html>
+	<head>
+		<title>exercicio1</title>
+	</head>
+	
+<script language="Javascript">
+
+function transfor(){
+var a=eval(document.exerc_4_p2.num1.value);
+var b=eval(document.exerc_4_p2.num2.value);
+var c;
+c=a;
+a=b;
+b=c;
+document.write("Os valores das variaveis agora estão trocados ;Observe: "+a+" "+b);
+}
+
+
+</script>
+
+<body>
+
+<h3><center>
+Digite dois números e troque eles de variavel
+</h3>
+
+<form name="exerc_1_p3">
+
+Digite um número:<input type="text" name="num1">
+<br>
+Digite o segundo número<input type="text" name="num2">
+<br>
+
+
+<input type="button" name="calcular" onclick="transfor()" value="calcular">
+
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</center>
+
+</body>
+
+</html>

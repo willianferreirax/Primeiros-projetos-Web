@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>
+			Valida atráves do botão Enviar
+		</title>
+	</head>
+<script language="Javascript">
+
+function valida(){
+	vazio=false;
+	if(document.f1.nome.value==""){
+		alert("o nome ...... tem que ser preenchido");
+		vazio=true;
+	}
+	if(document.f1.telefone.value==""){
+		alert("O telefone ...... tem que ser preenchido");
+		vazio=true;
+	}
+	if(vazio==false){
+	document.f1.submit();
+	}
+}
+</script>
+<body>
+		<form name="f1" method="post">
+			nome<input type="text" name="nome">
+			<br><br>
+			telefone<input type="text" name="telefone">
+			<br><br>
+			<input type="button" name="botao" value="Ok" onclick="valida()">
+		</form>
+</body>
+</html>		

@@ -1,0 +1,101 @@
+<meta charset="UTF-8">
+<html>
+  <head>
+    <title>Vetor...</title>
+
+    <script language ="javascript">
+	
+      // Função que organiza um vetor.
+      function vectorSort()
+	  {
+		// Exibe uma mensagem de informação.
+	    alert("Começando a organizar as coisas...");
+
+		// numeros = Vetor.
+        var numeros = [5 , 2 , 1 , 0 , 3 , 4 , 7 , 8 , 6 , 9];
+
+        // Contador para exibir o vetor.
+		var contv = 0;  
+		
+        // Contador para o primeiro for.
+        var cont1 = 0;
+
+		// Contador para o segundo for.
+		var cont2 = 0;
+
+		// Variável auxiliar para realizar a troca de posição.
+		var aux = -1;
+
+		// Chama a função showVector2.
+		numeros.sort();
+		showVector2(numeros);
+
+		// Primeiro for;
+		for (cont1 = 0 ; cont1 < numeros.length - 1; cont1++)
+        {
+		  // Segundo for;
+		  for (cont2 = cont1 + 1 ; cont2 < numeros.length; cont2++)
+		  {
+            // Exibe o vetor a cada passo;
+		    document.write("Passo " , cont1 , "-" , cont2 , ": => ");
+
+			// Exibe o vetor completo;
+			document.write(numeros.toString() , "<br>");
+			
+			// Troca os números de posição.
+		    if (numeros[cont1] > numeros[cont2])
+            {
+              aux = numeros[cont1];
+
+              numeros[cont1] = numeros[cont2];
+
+		      numeros[cont2] = aux;
+            } // Fim do if.
+          } // Fim do segundo for.
+		} // Fim do primeiro for.
+
+		// Chama a função showVector1.
+		showVector2(numeros);
+	
+
+	  } // Fim da função; 
+	  
+	  function showVector1(numeros)
+	  {
+	    document.write("Vetor organizado: => " + numeros.toString());
+	  }
+	  
+	  function showVector2(numeros)
+	  {
+	    // Mensagem.
+		document.write("Vetor: => [");
+
+		// Exibe o vetor antes de ser organizado, original;
+		for (contv = 0 ; contv < 10 ; contv++)
+        {
+		  if (contv != 9)
+          { 
+            document.write(numeros[contv] , " , ");
+		  }
+          else
+          {
+			document.write(numeros[contv] , "]<br>");
+		  }
+        }
+	  }
+	
+    </script>
+  </head>
+
+  <form>
+    <body>
+		
+	<h1>JavaScript...</h1><br><br>
+	<p>Exemplo de codigo JavaScript!</p>
+	<img src='programmer.png' style='position:fixed;top:0px;left:350px;width:50%;height:100%;z-index:-1;'>
+	<button onclick="vectorSort()">Clique aqui!</button><br><br>
+	<a href="javascript:window.close()">Fechar</a> 
+
+	</body>
+  </form>
+</html>

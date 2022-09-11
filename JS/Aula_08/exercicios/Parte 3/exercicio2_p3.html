@@ -1,0 +1,49 @@
+﻿<html>
+	<head>
+		<title>exercicio2</title>
+	</head>
+	
+<script language="Javascript">
+
+function soma(){
+var a=eval(document.exerc_2_p3.num1.value);
+var b=eval(document.exerc_2_p3.num2.value);
+var c=eval(document.exerc_2_p3.num3.value);
+
+document.write("O quadrado do seu primeiro número é: "+a**2+"<br>");
+document.write("O quadrado do seu segundo número é: "+b**2+"<br>");
+document.write("O quadrado do seu terceiro número é: "+c**2+"<br>");
+document.write("A soma dos quadrados dos seus números é: "+(a**2+b**2+c**2));
+
+}
+
+
+</script>
+
+<body>
+
+<h3><center>
+Digite três números e apresente a soma dos quadrados dos 3 números.
+</h3>
+
+<form name="exerc_2_p3">
+
+Digite um número:<input type="text" name="num1">
+<br>
+Digite o segundo número<input type="text" name="num2">
+<br>
+Digite o terceiro número<input type="text" name="num3">
+<br>
+
+
+<input type="button" name="calcular" onclick="soma()" value="calcular">
+
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</center>
+
+</body>
+
+</html>

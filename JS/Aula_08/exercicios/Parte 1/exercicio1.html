@@ -1,0 +1,44 @@
+﻿<html>
+	<head>
+		<title>exercicio1</title>
+	</head>
+	
+<script language="Javascript">
+
+function nota(){
+var nota=eval(document.exerc_1.num1.value);
+
+if (nota>=0 && nota<=4){
+alert('Reprovado');}
+
+if (nota>=5 && nota<=7){
+alert('Recuperação');}
+
+if (nota>=8 && nota<=10){
+alert('Aprovado');}
+
+if (nota>10){
+alert('nota invalida');}
+}
+
+</script>
+
+<body>
+
+<h3><center>
+Verifique se o aluno passou de ano
+</h3></center>
+
+<form name="exerc_1">
+
+Digite a nota:<input type="text" name="num1">
+<br>
+<br>
+<input type="button" name="ver" onclick="nota()" value="Ver nota">
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+﻿<html>
+	<head>
+		<title>exercicio2</title>
+	</head>
+	
+<script language="Javascript">
+
+function test(){
+var i;
+var num=eval(document.exerc_2_p2.num1.value);
+for(i=1;i<11;i++){
+document.write(num+" x "+i+"="+num*i+"<br>");
+}
+}
+
+</script>
+
+<body>
+
+<h3><center>
+Digite um número e apresente a tabuada dele.
+</h3>
+
+<form name="exerc_2_p2">
+
+Digite um número:<input type="text" name="num1">
+
+<input type="button" name="calcular" onclick="test()" value="calcular">
+
+<input type="button" name="fechar" onclick="window.close()" value="Fechar janela">
+
+</form>
+
+</center>
+
+</body>
+
+</html>

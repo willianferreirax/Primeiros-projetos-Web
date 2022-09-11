@@ -1,0 +1,75 @@
+<HTML>
+  <HEAD>
+  <script language="Javascript">
+  var test=window.prompt("Digite seu nome","Nome do internauta");
+  alert("olá "+test+" seu porra")
+  alert("Por enquanto tá tudo tranquilo");
+  alert("Sá du mei, muleque vei fresco");
+  
+  </script>
+  </HEAD>
+  <TITLE>Meu Formulario!</TITLE>
+  <BODY>
+  <!--
+	EXEMPLO DE FORMULÁRIO HTML.
+	ESTAS LINHAS SÃO COMENTÁRIO QUE SÃO IGNORADAS PELO NAVEGADOR (BROWSER).
+	
+	TITLE = TÍTULO DA PÁGINA, APARECE NA ABA DO NAVEGADOR.
+	BODY = CORPO DA PÁGINA.
+	ACTION = AÇÃO DO NAVEGADOR EXECUTADA APÓS CLICAR NO BOTÃO SUBMIT.
+  -->  
+  <FORM ACTION="form2.html">
+    
+	<!--
+	CABEÇALHO DO FORMULÁRIO 
+    -->  
+    <H1>Meu formulario!</H1><BR>
+	
+	<!--
+	CAIXA DE TEXTO. 
+    -->  
+    Nome: <INPUT TYPE="TEXT" NAME="nome"><BR><BR>
+	 
+	<!--
+	COMBOBOX CONHECIDO EM HTML COMO SELECT, LISTA OPÇÕES.
+    -->   
+	Faixa Etária: 
+	<SELECT>
+      <OPTION>Escolha aqui:
+      <OPTION>Menos que 15
+      <OPTION>Entre 21 e 25
+      <OPTION>Mais que 25
+    </SELECT><BR><BR>
+
+	<!--
+	RADIO.
+    -->  
+	Escolaridade:<BR>
+	<INPUT TYPE="RADIO" NAME="resposta" VALUE="altern1" CHECKED> Fundamental<BR>
+	<INPUT TYPE="RADIO" NAME="resposta" VALUE="altern2"> Médio<BR>
+	<INPUT TYPE="RADIO" NAME="resposta" VALUE="altern3"> Graduação<BR>
+	<INPUT TYPE="RADIO" NAME="resposta" VALUE="altern4"> Não estuda atualmente<BR><BR>
+
+	<!--
+	CHECKBOX
+    -->  
+	Atividade:<BR>
+	<INPUT TYPE="CHECKBOX" NAME="teste1" VALUE="opção1" CHECKED> Leitura<BR>
+	<INPUT TYPE="CHECKBOX" NAME="teste2" VALUE="opção2"> Esporte<BR>
+	<INPUT TYPE="CHECKBOX" NAME="teste3" VALUE="opção3"> Cinema<BR><BR>
+
+	<!--
+	CAIXA DE TEXTO, TEXTAREA.
+    -->  
+	Comentários:<BR>
+	<TEXTAREA COLS="50" ROWS="4"> </TEXTAREA><BR><BR>
+
+	<!--
+	BOTÕES, DE SUBMIT E RESET.
+	O PRIMEIRO ENVIA OS DADOS DO FORMULÁRIO, O SEGUNDO, LIMPA OS DADOS PREENCHIDOS.
+    -->  
+	<INPUT TYPE="SUBMIT" NAME="enviar"  VALUE="ENVIAR">
+	<INPUT TYPE="RESET" NAME="limpa" VALUE="LIMPAR">
+	</FORM>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+	<title>exercicio3</title>
+</head>
+
+<script language="Javascript">
+function dias(){
+var num=eval(document.semana.dia.value);
+
+switch (num){
+
+case 0:{
+alert('Seu número equivale ao Domingo');break;}
+
+case 1:{
+alert('Seu número equivale a Segunda');break;}
+
+case 2:{
+alert('Seu número equivale a Terça');break;}
+
+case 3:{
+alert('Seu número equivale a Quarta');break;}
+
+case 4:{
+alert('Seu número equivale a Quinta');break;}
+
+case 5:{
+alert('Seu número equivale a Sexta');break;}
+
+case 6:{
+alert('Seu número equivale a Sabado');break;}
+
+default:{
+alert('Digite um número valido');break;}
+}
+}
+
+</script>
+
+<body>
+
+<h3><center>
+Digite um número equivalente ao dia da semana começando em 0
+</h3></center>
+
+<form name="semana">
+
+Digite um número de 0-6:<input type="text" name="dia">
+<br>
+<input type="button" name="bt" value="Verificar" onclick="dias()">
+
+</form>
+
+
+</html>

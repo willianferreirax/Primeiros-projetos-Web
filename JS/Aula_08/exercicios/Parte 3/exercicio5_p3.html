@@ -1,0 +1,88 @@
+﻿<html>
+   
+   <head>
+   <title>exercicio5</title>
+   </head>
+   
+     <script language="Javascript">
+	 
+	    function calculadora(){
+	 
+	    var num1=eval(document.Calc.num1.value);
+		
+		var num2=eval(document.Calc.num2.value);
+		
+		var oper=eval(document.Calc.oper.value);
+		
+		if(oper==1){
+		
+		var result=num1+num2
+		
+		document.Calc.result.value=result;
+		
+		}
+		
+		if(oper==2){
+		
+		var result=num1-num2
+		
+		document.Calc.result.value=result;
+		
+		}
+		
+		if(oper==3){
+		
+		var result= num1*num2
+		
+		document.Calc.result.value=result;
+		
+		}
+		
+		if(oper==4){
+		
+		var result= num1/num2
+		
+		document.Calc.result.value=result;
+		
+		}
+		
+		}
+	 
+	 </script>
+	 
+   <body>
+   
+   <h3>
+   <center>
+   Simulador de calculadora
+   </h3>
+   
+     <form name="Calc">
+	 
+	   Digite o 1ºNúmero: <input type="text" name="num1" size="4" maxlength="4">
+	   <br><br>
+     
+	   Digite o 2ºNúmero: <input type="text" name="num2" size="4" maxlength="4">
+	   <br><br>
+	 
+	   Digite a operação: <input type="text" name="oper" maxlength="1">
+	   1-Soma;  2-Subtração;  3-Multiplicação;  4-Divisão
+	   
+	   <br>
+	   
+	   <hr>
+	   
+	   <br><br><br><br>
+	 
+	   Resultado: <input type="text" name="result" size="4" maxlength="25">
+	   <br><br><br>
+	 
+	   <input type="button" name="bt1" value="Calcular" onclick="calculadora()">
+	   <input type="reset" name="bt2" value="Cancelar" onclick="document.Calc.num1.focus()">
+	   <input type="button" name="bt3" value="Fechar" onclick="window.close()"></center>
+	 
+	 </form>
+	 </center>
+   </body>
+   
+</html>

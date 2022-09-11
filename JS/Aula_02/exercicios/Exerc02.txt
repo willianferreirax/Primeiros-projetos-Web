@@ -1,0 +1,7 @@
+Exercício 02:
+
+Condições que o script deve atender:
+
+- Solicitar o nome.
+- Solicitar o sobrenome (separado do nome, em outra caixa de texto).
+- Apresentar o nome e o sobrenome digitados (em uma única caixa de diálogo).

@@ -1,0 +1,39 @@
+<html>
+  <head>
+    
+	<title>Exemplo vetor</title>
+<center>
+<h3>
+<script language="Javascript">
+	
+var vetor_frutas = ['maça','uva','banana','pitanga','manga','pessego','morango','abacaxi']
+
+function desorganizado(){	
+document.write("<center> <h1> vetor desorganizado <br> </h1> </center>")
+
+	for(i=0;i<=7;i++){
+	
+	document.write("<center><h3>"+vetor_frutas[i]+"<br><br></center></h3>")
+	}
+}
+vetor_frutas.sort()
+
+function organizado(){	
+document.write("Vetor organizado <br><br>")
+
+	for(i=0;i<=7;i++){
+		
+		document.write(vetor_frutas[i]+"<br><br>")
+	}
+}
+	
+</script>
+<h3>
+<form name="test">
+<input type="button" onclick="desorganizado()" title="desorganizado" value="desorganizado">
+
+</form>
+</center>	
+</head>
+</html>
+

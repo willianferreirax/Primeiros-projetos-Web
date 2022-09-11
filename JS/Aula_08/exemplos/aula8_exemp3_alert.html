@@ -1,0 +1,23 @@
+<htm><head><title>Cálculos entre objeto de Texto</title>
+</head>
+<script language="Javascript">
+function operacao(){
+var a=eval(document.formcalc.t1.value);
+var b=eval(document.formcalc.t2.value);
+var c=a+b;
+alert("O Resultado da operação é -> "+c);
+}
+</script>
+<body>
+<form name="formcalc">
+<h3><center>Cálculo em JavaScript</h3>
+Digite o primeiro número:<input type="text" name="t1" size="4" maxlenght="4">
+<br><br>
+Digite o segundo número:<input type="text" name="t2" size="4" maxlenght="4">
+<br><br><hr><br><br>
+<input type="button" name="bt1" value="Calcular" onclick="operacao()">
+&nbsp&nbsp
+<input type="reset" name="bt2" value="Cancelar" onclick="document.formcalc.t1.focus()">
+&nbsp&nbsp
+<input type="button" name="bt3" value="Fechar" onclick="window.close()"></center>
+</form></body></html>

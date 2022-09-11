@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+ <TITLE>Novo Documento</TITLE>
+</HEAD>
+<script language="javascript">
+
+function blokletras(objEvent)
+{
+  var iKeyCode;
+  iKeyCode = objEvent.keyCode;
+  if(iKeyCode>=48 && iKeyCode<=57) return true;
+  return false;
+}
+
+function verifica()
+{
+vazio=false;
+if(document.form.txtCoddisciplina.value=="")
+      {
+         alert("O código tem que ser preenchido");
+         vazio=true;
+         document.form.txtCoddisciplina.focus;
+         
+      }
+if(document.form.txtNome.value=="")
+      {
+         alert("O nome tem que ser preenchido");
+         vazio=true;
+         document.form.txtNome.focus;
+      }
+if(vazio==false)
+{
+return confirm("Tem certeza que deseja continuar?");
+}
+
+}
+
+</script>
+
+
+<BODY>
+  <p align="center"><table border="1" width="740">
+<tr>
+  <td>
+  <center>
+  <img src="logotipo-cps.jpg" width="440" height="120" border="0"></td>
+</tr>
+<tr>
+  <td bgcolor=#606060><p align="center"><font color="#FFFFFF">Cadastro de Disciplinas</font></p></td>
+</tr>
+ <tr>
+  <td><form name="form" action="caddisciplina.php" method="POST">
+    <tr>
+       <td><b>Código da Disciplina:</b>  <input type="text" name="txtCoddisciplina" maxlength = "5" size = "5" onkeypress="return blokletras(event)"></td>
+    </tr>
+    <tr>
+       <td><b>Nome da Disciplina: </b> <input type="text" size="50" name="txtNome"></td>
+    </tr>
+    <tr>
+       <td>
+       <center>
+       <input type="submit" value="Incluir" name="botao" onclick="return verifica()">
+       </td>
+    </tr>
+</form></td>
+</tr>
+</table></p>
+
+</BODY>
+</HTML>
